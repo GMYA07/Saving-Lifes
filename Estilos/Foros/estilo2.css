@@ -1,0 +1,101 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+
+}
+body{
+    background-color: #1B2021;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+
+}
+
+.tabla1{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.uno{
+    background-color: #8e7dbe;
+    padding: 10px;
+    border-radius: 15px;
+    word-break: break-all;
+}
+#uno{
+      word-break: break-all;
+  
+}
+.dos{
+    padding: 20px 10px 20px 10px;
+
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 15px;
+
+}
+.link{
+    color: white;
+    text-decoration: none;
+
+}
+.p1{
+    margin: 0% 2% 0% 2%;
+}
+.margen{
+    margin: 0% auto;
+    max-width: 75%;
+}
+.margen2{
+    padding-left: 5px;
+
+}
+.linkbttn{
+    background-color: #1B2021;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    margin: 0% 50% 1% 90%;
+    padding: 8px 0px 0px 15px;
+
+}
+
+.linkbttn:hover{
+    background-color: #8e7dbe;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    margin: 0% 5% 1% 90%;
+    padding: 8px 0px 0px 15px;
+
+}
+.linkbttn2{
+    background-color: #1B2021;
+    border-radius: 8px;
+    width: 85px;
+    height: 30px;
+    
+    padding: 8px 0px 0px 4px;
+
+}
+
+.linkbttn2:hover{
+    background-color: #8e7dbe;
+    border-radius: 8px;
+    width: 85px;
+    height: 30px;
+    padding: 8px 0px 0px 4px;
+
+}
+
+.titulo{
+    font-size: 40px;
+    color: #8e7dbe;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+

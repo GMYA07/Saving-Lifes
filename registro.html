@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Estilos/Index/menu.css">
+	<link rel="stylesheet" type="text/css" href="Estilos/Index/Footer.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="Index/main.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Estilos/Registro/Estilooo.css">
+    <link rel="stylesheet" type="text/css" href="Estilos/Registro/Estilo.css">
+	<meta charset="utf-8">
+	<title>Registro </title>
+</head>
+<body>
+	<header>
+        <div class="menu_bar">
+        <a class="bt-menu"><span class="icon-list2" ></span>Menú de Saving Lifes</a>
+        </div>
+    
+        <nav>
+        <ul>
+        <li><a href="Index.html"><span class="icon-house"></span>Pagina Principal</a></li>
+        <!--Submenu-->
+        <li class="submenu">
+        <a ><span class="icon-rocket"></span>Apartados<span class="caret icon-arrow-down6"></span></a>
+        <ul class="children">
+            <li><a href="Mascotas-perdidas.php">Animales Perdidos<span class="icon-dot"></span></a></li>
+            <li><a href="Mascotas-en-adopcion.php">Animales en adopción<span class="icon-dot"></span></a></li>
+            
+                            
+        </ul>
+        </li>
+        <!--Cierre de submenu-->
+        <!--Submenu-->
+        <li class="submenu">
+        <a ><span class="icon-rocket"></span>Foros<span class="caret icon-arrow-down6"></span></a>
+        <ul class="children">
+        <li><a href="indexForo.php">Foro Comunitario <span class="icon-dot"></span></a></li>
+        <li><a href="indexForoVet.php">Foro veterinario<span class="icon-dot"></span></a></li>
+        <li><a href="indexForoRes.php">Foro rescatista<span class="icon-dot"></span></a></li>
+                            
+        </ul>
+        </li>
+        <!--Cierre de submenu-->
+        <!--Submenu-->
+        <li class="submenu">
+        <a><span class="icon-rocket"></span>Formularios<span class="caret icon-arrow-down6"></span></a>
+        <ul class="children">
+        <li><a href="Formulario-Reporte.php">Reportar mascota<span class="icon-dot"></span></a></li>
+        <li><a href="Formulario-Adopcion.php"> Adoptar una mascota<span class="icon-dot"></span></a></li>
+        <li><a href="daradopcion.php"> Dar en adopción<span class="icon-dot"></span></a></li>
+        </ul>
+        </li>
+        <!--Cierre de submenu-->
+        <!--Submenu-->
+        <li class="submenu">
+        <a><span class="icon-rocket"></span>Redes Sociales<span class="caret icon-arrow-down6"></span></a>
+        <ul class="children">
+            <li><a href="https://www.facebook.com/profile.php?id=100057552009985" target="_blank">Facebook<span class="icon-dot"></span></a></li>
+            <li><a href="https://twitter.com/Lifes4Lifes?s=09" target="_blank"> Twitter<span class="icon-dot"></span></a></li>
+            <li><a href="https://www.instagram.com/savinglif3s/" target="_blank"> Instagram<span class="icon-dot"></span></a></li>
+        
+                            
+        </ul>
+        </li>
+        <!--Cierre de submenu-->
+        <!--Submenu-->
+        <li class="submenu">
+        <a><span class="icon-rocket"></span>Cuenta<span class="caret icon-arrow-down6"></span></a>
+        <ul class="children">
+        <li><a href="login.php"> Iniciar Sesión<span class="icon-dot"></span></a></li>
+        <li><a href="vista/vistaCliente.php"> Registrarse<span class="icon-dot"></span></a></li>
+        <li><a href="vista/vistaVeterinario.php">Registro Especial<span class="icon-dot"></span></a></li>
+                            
+        </ul>
+        </li>
+        <!--Cierre de submenu-->
+        </ul>
+        </nav>
+        </header>
+    
+
+
+
+
+
+    <!--Inicio de formulario--->
+	<form method="post" action="procesos/guardar.php" class="container-form">
+		<h2>Registro</h2>
+		<img src="Dar en adopción/SAVINGLIFE.png" class="image"><br>
+		<div class="prueba">
+		<label>Nombres: </label><br>
+		<input type="text" name="nombre" class="textname" required placeholder="Ej: Norma Nohemi">
+		</div>
+		
+		<div class="prueba">
+		<label>Apellidos: </label><br>
+		<input type="text" name="apellido" class="textname" required placeholder="Ej: Ventura Quijano">
+		</div><br><br>
+        <div class="prueba">
+            <p class="parrafo">
+                Genero: 
+                <input type="radio" name="genero" value="masculino"> Masculino
+                <input type="radio" name="genero" value="femenino"> Femenino<br>
+            </p>
+        </div><br><br>
+        <div class="prueba">
+        <p class="parrafo">
+                Rol:
+                <input type="radio" name="rol" value="Rescatista">Rescatista
+                <input type="radio" name="rol" value="Rescatista">Usuario Normal
+                
+        </p><br>
+        </div><br>
+        <div class="prueba">
+            <label>Correo Electrónico: </label><br>
+            <input type="email" name="correo" class="textname2" placeholder="Example1@dominio.com">
+        </div>
+		<div class="prueba">
+		<label>Nombre de usuario: </label><br>
+		<input type="text" name="username" class="textname" required placeholder="Ej: Gatitos3000">
+		</div>
+		
+		<div class="prueba">
+		<label>Numero telefónico(Opcional): </label><br>
+		<input type="tel" name="tel" class="texttel" placeholder="Ej: 7800-0500 ">
+		</div>
+
+		<div class="prueba">
+            <label>Pregunta de seguridad: </label><br>
+            <input type="text"list="PreguntasSeg" name="PreguntasSeg" id="Segu" placeholder="Seleccionar" class="textmas"><br>
+
+            <label>Tu respuesta: </label><br>
+            <input type="text" name="respuS" placeholder="********"required class="textmas">
+            <datalist id="PreguntasSeg">
+            <option value="¿Como se llama la calle donde creciste?">
+            <option value="¿Como se llama tu país favorito?">
+            <option value="¿Como se conocieron tus padres?">
+            <option value="¿Cual era tu apodo de la infancia?">
+            <option value="¿A que país te gustaria viajar?">
+            </datalist>
+            
+        </div> 
+        <div class="prueba">
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fechaN">
+        </div>
+		<div class="prueba">
+			<label>Contraseña: </label><br>
+			<input type="password" name="pass" class="textname2" placeholder="Example1@dominio.com">
+		</div>
+		
+       
+		
+		
+		<input type="submit" name="accion" value="REGISTRARME" required>
+	</form>
+<br><br><br>
+	
+</body>
+</html>

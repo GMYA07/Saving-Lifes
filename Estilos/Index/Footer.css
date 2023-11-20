@@ -1,0 +1,188 @@
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    
+}
+/*Propiedades de todo el contenido del footer un width maximo de 1200 px por cala columna con un relleno de 40 px para hacer un poco de espaciado*/
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px;
+   /*Se centra automaticamente*/
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+	/*Quita el estilo en forma de lista que aqdquiere en un principio y lo ordena por columna*/
+    display: flex;
+    /*Logra que haya un espaciado entre el contenido de el footere redes sociales|Informacionde compañia|contactos*/
+    justify-content: space-between;
+}
+
+#arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+#arrow:hover{
+    transform: scale(1.4);
+}
+
+.google{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.lang{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.colum1{
+	/*Delimita el maximo de espacio que agarrara el texto es decir cuando llega a 400px habra un tipo de salto de linea*/
+    max-width: 400px;
+}
+
+.colum1 h1{
+	/*Tamaño de fuente*/
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    /*Color de fuente*/
+    color: #C7C7C7;
+    /*Separa un poco el h1 del parrafo*/
+    margin-top: 20px;
+}
+
+.colum2{
+	/*Maxima espacio que ocupara la columna dos ya van 800px de los 1200*/
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+	/*Tamaño de fuente*/
+    font-size: 22px;
+}
+
+.row{
+	/*Div que contiene las imagenes de nuestras redes sociales*/
+    margin-top: 20px;
+ /*Deja un espaciado entres todas nuestras imagenes*/
+    display: flex;
+}
+
+.row img{
+	/*Ancoho y alto de nuestras imagenes*/
+    width: 50px;
+    height: 50px;
+}
+
+.row label{
+	/*Nuestro contenedor de texto establecemos el color de la fuente y el espaciado izquierdo y de arriba que dejara*/
+    margin-top: 10px;
+    /*Espaciado de las imagenes y el texto */
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+	/*Con la columana tres ya se llena el total del footer que es 1200px todas la columnas son de 400px*/
+	/*Se puede expresar con 75em ya que 1 em 16px*/
+    max-width: 400px;
+}
+
+.colum3 h1{
+	/*Tamaño*/
+    font-size: 22px;
+}
+
+.row2{
+	
+    margin-top: 20px;/*Se ordenan todos los elementos*/
+    display: flex;
+}
+
+.row2 img{/*Tamaño de las imagenes*/
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 0px;/*Se hacen mas hacia abajo*/
+    margin-left: 25px;/*dejan un espaciaod entre la imagenes de contacto y el texto*/
+    
+}
+
+.container-footer{/*Se actualiza el bg de el espacio donde estan los terminos y condiciones y derechos reservados*/
+    width: 100%;  
+    background: #101010;/*Color gris tonalidad oscura*/
+}
+/*Se ponen todos los elementos del subfooter de terminos y condiciones con sus respectivas propiedades*/
+.footer{
+    max-width: 1200px;
+    /*Se centran*/
+    margin: auto;
+    margin-top: 75px;
+    /*Con este elemento se empieza a jugar con el bloque de derecho reservados*/
+    display: flex;
+    /*Se deja un espacio entre los dos textos*/
+    justify-content: space-between;  
+    /*Total del relleno del subfooter*/
+    padding: 20px;
+}
+/*Color de fuente*/
+.copy{
+    color: #C7C7C7;
+}
+/*Se elminan todos los hipervinculos o el subrayado de los hipervinculos*/
+.copy a{
+    text-decoration: none;
+    color: white;
+    /*Se le agrega negirta al nombre saving Lifes*/
+    font-weight: bold;
+}
+/*Se eliminan los subrayados de hipervinculo de la politica y privacidad*/
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+/*Se hace responsive o un poco adaptabel */
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }    
+    ul.nav{
+        flex-wrap: wrap;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+    .header{
+        width: 90%;
+    }
+}
+
+
+

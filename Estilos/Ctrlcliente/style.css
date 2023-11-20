@@ -1,0 +1,21 @@
+
+body{
+    background-color: #1B2021;
+    font-family: 'Quicksand', sans-serif;
+
+}
+h1{
+    color: white;
+    text-align: center;
+}
+label{
+    color: white;
+}
+.button{
+    color: white;
+    background-color: #8e7dbe;
+    border: none;
+	text-align: center;
+    margin: 4px 2px;
+	padding: 5px 10px;
+}

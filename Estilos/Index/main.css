@@ -1,0 +1,63 @@
+/*Se oculta el contenido del div*/
+body{
+	background-color: #1B2021;
+    font-family: 'Quicksand', sans-serif;
+}
+.slider{
+	/*Se utiliza el 80% del tamaño de la pantalla*/
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul{
+	/*Se elimina el espaciado*/
+	padding: 0;
+	/*Se establece el tamaño de las 4 imagenes por eso 400%*/
+	width: 600%;
+	/*Logra regresar las imagenes a su tamaño original*/	
+	display: flex;
+	/*Ciclo infinito con un efecto de rebote tiempo de 20 segundos */
+	/*Cambio 1-2-3-4 y 4-3-2-1*/
+	/*Infinite loop with a 36 second bounce time effect */
+/*The change sequence is Change 1-2-3-4 and 4-3-2-1 */
+	animation: cambio 36s infinite alternate;
+}
+/*Se elimina el estilo de la lista*/
+.slider li{
+	width: 60%;
+	list-style: none;
+}
+/*Se mide el ancho de la imagen*/
+.slider img{
+	width: 100%;
+}
+/*Trabajo con la animacion*/
+
+@keyframes cambio{
+
+/*Control del tiempo*/
+/* segundos cada imagen*/
+/*Minus 100 percent left*/
+/* /each image will move that same distance on the page*/
+
+	0%{margin-left: 0;}	
+	10%{margin-left: 0;}
+
+	20%{margin-left: -100%;}
+		30%{margin-left: -100%;}
+
+	40%{margin-left: -200%;}	
+	50%{margin-left: -200%;}
+
+	60%{margin-left: -300%;}
+		70%{margin-left: -300%;}	
+
+	80%{margin-left: -400%;}
+		90%{margin-left: -400%;}
+	
+	95%{margin-left: -500%;}
+		100%{margin-left: -500%;}
+
+}
+
+

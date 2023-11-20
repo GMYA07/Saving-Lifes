@@ -1,0 +1,81 @@
+body{
+	background-color:#E1E5EA;
+	font-family: 'Zilla Slab', serif;
+}
+.container-form{
+	max-height:70%;
+	min-width: 600px;
+	box-sizing: border-box;
+	width:665px;
+	height:700px;
+	margin:auto;
+	background-color:#E1E5EA;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding:15px;
+}
+.image{
+	display:block;
+	margin:auto;
+}
+.prueba{
+	box-sizing: border-box;
+	display:inline-block;
+	margin-bottom: 10px;
+	margin-right:auto;
+}
+.container-form h2{
+text-align: center;
+}
+.textname{
+	width: 310px;
+	padding: 10px;
+	border: 1px solid;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.texttel{
+	width: 310px;
+	padding: 10px;
+	border: 1px solid;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.textmas{
+	width:625px;
+	padding: 10px;
+	border: 1px solid;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+input[type="password"] {
+	padding: 10px;
+	border: 1px solid;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 625px;
+}
+
+input[type="submit"]{
+	min-width: 400px;
+	font-size: 20px;
+	display: block;
+	width:625px;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background: linear-gradient(#C490E4, #8E7DBE);
+	cursor: pointer;
+}
+input[type="submit"]:active{
+transform: scale(0.95);
+}
+@media (max-width: 480px){
+	.container-form{
+		width: 100%;
+	}
+}
+@media (max-width: 480px){
+	.texttel{
+		width: 100%;
+	}
+}
+@media (max-width: 480px){
+	.textmas{
+		width: 100%;
+	}
+}
